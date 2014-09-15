@@ -1,7 +1,6 @@
 import unittest
 
 from django.conf import settings
-settings.configure()
 
 from django.contrib.sites.models import Site
 from django.core.management.base import CommandError

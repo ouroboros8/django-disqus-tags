@@ -1,14 +1,13 @@
 import base64
 import hashlib
 import hmac
-import simplejson
+import json
 import time
 
 from django import template
 from django.conf import settings
 from django.contrib.sites.models import Site
 from django.utils.functional import curry
-from django.utils.encoding import force_unicode
 
 register = template.Library()
 
@@ -65,7 +64,7 @@ def disqus_dev(context):
     if settings.DEBUG:
         return """<script type="text/javascript">
     var disqus_developer = 1;
-    var disqus_url = '//%s%s';
+    var disqus_url = 'http://%s%s';
 </script>""" % (Site.objects.get_current().domain, context['request'].path)
     return ""
 
