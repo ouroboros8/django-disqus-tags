@@ -1,6 +1,8 @@
 # django-disqus
 
-Export existing comments to and integrate DISQUS_ into your Django_ website.
+__This package does not currently work: it needs to be updated to function with version 3.0 or the DISQUS API__
+
+Export existing comments to and integrate DISQUS into your Django website.
 
 Features:
 
